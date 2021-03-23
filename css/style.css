@@ -1,0 +1,140 @@
+/* reset css - 2021 */
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Josefin Sans',sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,figure,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3{
+    font-weight: 100;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* theme css */
+header h1{
+    line-height: 6.0rem;
+    text-align: center;
+    font-weight: inherit;
+    margin:0 0 3.0rem;
+    background-color: #222;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.content-gallery{
+    max-width: 80rem;
+    position: relative;
+    margin: 0 auto;
+    border: solid .1rem transparent;
+    box-shadow: 0 .3rem .8rem rgba(0,0,0,0.5);
+    background-color: #fafafa;
+}
+.content-gallery > img{
+    display: block;
+    min-width: 100%;
+    padding: 1rem;
+}
+.container{
+    max-width: 62.0rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition-duration: 0.9s;
+}
+/* photos */
+.box{
+    width: calc(100% / 3 - 1rem);
+    float: left;
+    /* visibility*/
+    margin-right: 1.0rem;
+    border-radius: .8rem;
+    border: solid .1rem #ccc;
+    background-color: #fff;
+    padding: 1rem;
+}
+.box img{
+    display: block;
+    width: 100%;
+}
+.box:last-child{
+    margin: 0;
+}
+.box-1{
+    transform: translateX(-60rem);
+    transition-duration: 0.9s;
+}
+.box-3{
+    transform: translateX(60rem);
+    transition-duration: 0.9s;
+}
+/* pour animer en js */
+.appear{
+    height: 20rem;
+    opacity: 1;
+}
+.speed-box{
+    transform: translateX(0);
+}
+
+hr{ /* separator */
+    height: .1rem;
+    border: 0;
+    background-color: #ccc;
+    margin: 2rem 0;
+}
+main button{
+    display: block;
+    width: 20rem;
+    line-height: 4.5rem;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    margin: 1rem auto 0;
+    cursor: pointer;
+    font-size: inherit;
+    border-radius: .8rem;
+}
+main button .material-icons{
+    vertical-align: middle;
+}
+footer{
+    position: relative;
+    max-width: 80rem;
+    margin: 10rem auto;
+    background-color: #344955;
+    line-height: 6.0rem;
+    padding-left: 1rem;
+    border-radius: .8rem;   
+}
+footer p{
+    text-align: left;
+    color: #fff;
+}
+footer .logo{
+    position: absolute;
+    display: grid;
+    top: 50%;
+    left: 50%;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+    transform: translate(-50%,-90%);
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    border: solid 1rem #fafafa;
+    background-color: #f9aa33;
+}

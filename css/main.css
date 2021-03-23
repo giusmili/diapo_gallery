@@ -1,0 +1,130 @@
+/* reset css - 2021 */
+html{
+    font-size: 62.5%;
+    /* option arrière-plan */
+   background: #000 url(../asset/montage.jpg)no-repeat fixed center center / cover;
+}
+body{
+    font: 1.6rem 'Josefin Sans',sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,figure,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3{
+    font-weight: 100;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/* theme */
+
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+}
+
+
+
+header h1, main h2{
+    line-height: 6.0rem;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+main h2{
+    line-height: 4.5rem;
+    position: relative;
+}
+main{
+    max-width: 40rem;
+    margin: 2.0rem auto;
+}
+div img{
+    display: block;
+    max-width: 100%;
+}
+.section{
+    position: relative;
+    overflow: hidden; /* masque pour les éléments */
+    height: 40rem;
+    
+    box-shadow: 0 0 1rem #222;
+}
+.section .slide_show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slideIn 8s linear infinite;
+    transition: all 0.6s ease-in-out;
+
+}
+/*.section .slide_show:hover{
+    animation-play-state: paused;
+    filter: grayscale(100%);
+    cursor: pointer;
+}*/
+.section .slide_stop{
+    animation-play-state: paused;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+/* stoper l'animation */
+
+/* positionnement des images */
+h2 .material-icons{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    vertical-align: -.4rem;
+    display: inline-block;
+}
+.slide_1{
+    top: 0;
+}
+.slide_2{
+    top: -40rem;
+}
+.slide_3{
+    top: -80rem;
+}
+
+/* animation css */
+@keyframes slideIn{
+    0%{
+        top: 0;
+    }
+    22%{
+        top: 0; /* pause */
+    }
+    33%{
+        top: -40rem;
+    }
+    45%{
+        top: -40rem; /* pause */
+    }
+    66%{
+        top: -80rem; 
+    }
+    90%{
+        top: -80rem; /* pause */
+    }
+}
