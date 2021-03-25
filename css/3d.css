@@ -1,0 +1,162 @@
+/* reset css - 2021 */
+html{
+    font-size: 62.5%;
+    /* option arrière-plan */
+   background: #000 url(../asset/montage.jpg)no-repeat fixed center center / cover;
+}
+body{
+    font: 1.6rem 'Josefin Sans',sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,figure,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3{
+    font-weight: 100;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/* theme */
+
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+}
+/* theme */
+header{
+    background-color: #222;
+}
+header h1{
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+    line-height: 6.5rem;
+    font-weight: 300;
+    
+}
+.wrap{
+    /* contexte 3d */
+    perspective: 80rem;
+    /* position du cube */
+    perspective-origin: 50% 10.0rem;
+}
+.cube{
+    position: relative;
+    z-index: 1;
+    width: 20rem;
+    transform-style: preserve-3d;
+    margin: 10rem auto;
+}
+section h2{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: #fff;
+    padding: .5rem 0;
+    font-weight: 300;
+}
+.cube section{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 20rem;
+    opacity:0.9;
+    box-shadow: 0 0 1rem #222;
+}
+section img{
+    display: block;
+    width: 100%;
+}
+/* mettre en place les face */
+.back{
+    transform: translateZ(-10rem) rotateY(180deg)scale(1);
+    transition-duration: 0.5s;
+}
+
+.right{
+    transform: rotateY(-270deg) translateX(10rem)scale(1);
+    transform-origin: top right;
+    transition-duration: 0.5s;
+}
+
+.left{
+    transform: rotateY(270deg) translateX(-10rem)scale(1);
+    transform-origin: center left;
+    transition-duration: 0.5s;
+}
+
+.top{
+    transform: rotateX(-90deg) translateY(-10rem);
+    transform-origin: top center;
+    transition-duration: 0.5s;
+}
+
+.bottom{
+    
+    transform: rotateX(90deg) translateY(10rem);
+    transform-origin: bottom center;
+}
+.front{
+    transform: translateZ(10rem)scale(1);
+    transition-duration: 0.5s;
+}
+.front:hover{
+    transform: translateZ(12.5rem)scale(1.5);
+    opacity: 1;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.left:hover{
+    transform: rotateY(270deg)translateZ(5rem)translateX(-10rem)scale(1.5);
+    transform-origin: center left;
+    opacity: 1;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.right:hover{
+    transform: rotateY(-270deg)translateZ(5rem)translateX(10rem)scale(1.5);
+    transform-origin: top right;
+    transition-duration: 0.5s;
+    filter: grayscale(100%);
+}
+
+/* animation */
+.cube{
+    animation: spin 9s infinite linear;
+    
+}
+.cube:hover{
+    
+    animation-play-state: paused;
+    
+    cursor: pointer;
+}
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
