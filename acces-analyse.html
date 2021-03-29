@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptatibus suscipit">
+    <title>Accessibilité</title>
+    <link rel="icon" type="image/png" href="./asset/icone.png">
+    <link rel="stylesheet" href="./css/screen.css" type="text/css">
+</head>
+<body>
+    <div id="header" role="banner">
+        <h1><img src="./asset/codepen.svg" alt="logo de l'entreprise" aria-hidden="true">Lisibilté de la page</h1>
+    </div>
+    <div class="wrapper" role="main">
+        <h2>Accessibilité</h2>
+        <div id="content" role="region" aria-labelledby="description">
+            <p id="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptatibus suscipit repellendus nam 
+                recusandae qui ipsa assumenda, reiciendis vero quod illum quis quae repellat.
+            </p>
+        </div>
+        <div class="image" role="figure" aria-labelledby="personnage">
+            <img src="./asset/flash.jpg" alt="Flash héros DC" id="personnage">
+        </div>
+    </div>
+    <div class="footer" role="contentinfo">
+        <p>&copy; - MIT - 2021</p>
+    </div>
+</body>
+</html>

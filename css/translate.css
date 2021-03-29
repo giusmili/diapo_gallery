@@ -1,0 +1,54 @@
+/* reset css - 2021 */
+html{
+    font-size: 62.5%;
+    /* option arrière-plan */
+  
+}
+body{
+    font: 1.6rem 'Josefin Sans',sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+h1,h2,h3,p,figure,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3{
+    font-weight: 100;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: #222;
+}
+header h1{
+    line-height: 6.5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+/* l'image */
+.smile{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background: #ccc;
+    border-radius: 100%;
+    border: solid .5rem #e54c21;
+    box-shadow: 0 0 1rem #333;
+    transition: transform 1s ease-in-out;
+}
+.smile img{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,75 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,figure,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3{
+    font-weight: 100;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* theme css */
+#header h1{
+    line-height: 6.5rem;
+    text-align: center;
+}
+div.wrapper, .footer{
+    max-width: 80rem;
+    margin: 0 auto 2rem;
+}
+.wrapper, .image img{
+    display: block;
+    width: 100%;
+}
+.wrapper h2{
+    line-height: 4.5rem;
+}
+.wrapper .image{
+    position: relative;
+    overflow: hidden;
+}
+.wrapper .image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    background: #fff;
+    bottom: -10.0rem;
+    left: 0;
+    z-index: 1;
+    transform: skew(0deg, -2.5deg);
+    background-color: #fff;
+}
+#content{
+    position: relative;
+    line-height: 2.6rem;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+#content::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+    bottom: -1rem;
+    left: 20%;
+    transform: rotate(45deg);
+    background-color: #fafafa;
+}
+.footer{
+    text-align: center;
+}
