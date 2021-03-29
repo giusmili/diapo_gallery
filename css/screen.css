@@ -26,6 +26,10 @@ button{
     line-height: 6.5rem;
     text-align: center;
 }
+#header h1 img{
+    display: inline-block;
+    margin-right: .5rem;
+}
 div.wrapper, .footer{
     max-width: 80rem;
     margin: 0 auto 2rem;
@@ -69,6 +73,9 @@ div.wrapper, .footer{
     left: 20%;
     transform: rotate(45deg);
     background-color: #fafafa;
+}
+.contentInfo{
+    color: #6d0707;
 }
 .footer{
     text-align: center;
