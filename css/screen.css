@@ -4,10 +4,13 @@ html{
 body{
     font: 1.6rem sans-serif;
     margin: 0;
+    transition: all .6s ease-in-out;
+    
 }
 h1,h2,h3,p,figure,ul,ol,hr{
     margin: 0;
     padding: 0;
+    transition: all .6s ease-in-out;
     
 }
 h1,h2,h3{
@@ -22,13 +25,68 @@ button{
 }
 
 /* theme css */
+#header{
+    position: relative;
+
+}
+
+#header .fas{
+    position: absolute;
+    top: 2rem;
+    right: 29rem;
+    z-index: 1;
+    display: inline-block;
+    font-size: 2.5rem;
+    cursor: pointer;
+    
+}
+#header .fa-search-plus, #header .fa-search-minus{
+    right: 35rem;
+}
+
+.contentInfo{
+    padding: 1rem;
+}
+.contentInfo p::before{
+    content: '\f086';
+    font-family: 'Font Awesome 5 free';
+    margin-right: .5rem;
+}
 #header h1{
     line-height: 6.5rem;
     text-align: center;
 }
+.zoom{
+    font-size: 1.9rem;
+}
+.night_day{
+    background-color: #222;
+    
+}
+.night_day_text{
+    color: #fff;
+}
 #header h1 img{
     display: inline-block;
     margin-right: .5rem;
+}
+p .material-icons{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.wrapper h2{
+    color: #6d0707;
+}
+.wrapper h2::before{
+    content: '\f368';
+    font-family: "Font Awesome 5 brands";
+    margin-right: .5rem;
+    color: #333;
+
+}
+
+.align-text{
+    text-align: center;
 }
 div.wrapper, .footer{
     max-width: 80rem;

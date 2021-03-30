@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptatibus suscipit">
     <title>Accessibilité</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   
     <link rel="icon" type="image/png" href="./asset/icone.png">
     <link rel="stylesheet" href="./css/screen.css" type="text/css">
 </head>
 <body>
     <div id="header" role="banner">
+        <i class="fas fa-search-plus"></i>
+        <i class="fas fa-moon" aria-hidden="true"></i>
         <h1><img src="./asset/codepen.svg" alt="logo de l'entreprise" aria-hidden="true">Lisibilté de la page</h1>
     </div>
     <div class="wrapper" role="main">
         <h2>Accessibilité</h2>
         <div id="content" role="region" aria-labelledby="description">
             <p id="description">
+                <span class="material-icons" aria-hidden="true">format_align_center</span>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptatibus suscipit repellendus nam 
                 recusandae qui ipsa assumenda, reiciendis vero quod illum quis quae repellat.
             </p>
@@ -27,8 +33,9 @@
         <!--ajouter quelque chose-->
     </div>
     <div class="footer" role="contentinfo">
-        <p>&copy; - MIT - 2021</p>
+        <p>&copy; - MIT - 2021 </p>
     </div>
+    
     <script src="./js/flash.js"></script>
 </body>
 </html>
